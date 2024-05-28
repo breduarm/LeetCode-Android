@@ -35,4 +35,14 @@ class ReverseIntTest {
 
         assertEquals(expected, result)
     }
+
+    @Test
+    fun case_4() {
+        val x = 1534236469
+        val expected = 0
+
+        val result = reverseInt.solve(x)
+
+        assertEquals(expected, result)
+    }
 }
