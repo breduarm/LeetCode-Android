@@ -13,4 +13,22 @@ class TwoSumTest {
         val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
         assertEquals(target, nums[firstPosition] + nums[secondPosition])
     }
+
+    @Test
+    fun add_last_two_positions() {
+        val nums = intArrayOf(3,2,4)
+        val target = 6
+
+        val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
+        assertEquals(target, nums[firstPosition] + nums[secondPosition])
+    }
+
+    @Test
+    fun add_the_two_positions_of_an_array() {
+        val nums = intArrayOf(3,3)
+        val target = 6
+
+        val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
+        assertEquals(target, nums[firstPosition] + nums[secondPosition])
+    }
 }
