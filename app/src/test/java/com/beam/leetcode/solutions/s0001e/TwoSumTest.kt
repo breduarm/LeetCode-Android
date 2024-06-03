@@ -1,4 +1,4 @@
-package com.beam.leetcode.solutions.easy.e0001
+package com.beam.leetcode.solutions.s0001e
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

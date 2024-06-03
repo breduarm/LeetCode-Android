@@ -1,4 +1,4 @@
-package com.beam.leetcode.solutions.easy.e0001
+package com.beam.leetcode.solutions.s0001e
 
 import kotlin.time.Duration
 import kotlin.time.measureTimedValue
