@@ -5,13 +5,14 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class TwoSumTest {
+    private val twoSum = TwoSum()
 
     @Test
     fun add_first_two_positions() {
         val nums = intArrayOf(2,7,11,15)
         val target = 9
 
-        val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
+        val (firstPosition, secondPosition) = twoSum.solve(nums, target)
         assertEquals(target, nums[firstPosition] + nums[secondPosition])
     }
 
@@ -20,7 +21,7 @@ class TwoSumTest {
         val nums = intArrayOf(3,2,4)
         val target = 6
 
-        val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
+        val (firstPosition, secondPosition) = twoSum.solve(nums, target)
         assertEquals(target, nums[firstPosition] + nums[secondPosition])
     }
 
@@ -29,7 +30,7 @@ class TwoSumTest {
         val nums = intArrayOf(3,3)
         val target = 6
 
-        val (firstPosition, secondPosition) = TwoSum().solve(nums, target)
+        val (firstPosition, secondPosition) = twoSum.solve(nums, target)
         assertEquals(target, nums[firstPosition] + nums[secondPosition])
     }
 
@@ -38,7 +39,7 @@ class TwoSumTest {
         val nums = intArrayOf(2,7,11,15)
         val target = 9
 
-        val (result, executionTime) = TwoSum().solveWithMeasure(nums, target)
+        val (result, executionTime) = twoSum.solveWithMeasure(nums, target)
         val (firstPosition, secondPosition) = result
 
         assertEquals(target, nums[firstPosition] + nums[secondPosition])
