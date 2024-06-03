@@ -4,11 +4,11 @@ class Palindrome {
 
     fun solve(x: Int): Boolean {
         if (x < 0) return false
-        var number = x
+        var numberToCheck = x
         var result = 0
-        while (number != 0) {
-            result = result * 10 + number % 10
-            number /= 10
+        while (numberToCheck != 0) {
+            result = result * 10 + numberToCheck % 10
+            numberToCheck /= 10
         }
         return x == result
     }
