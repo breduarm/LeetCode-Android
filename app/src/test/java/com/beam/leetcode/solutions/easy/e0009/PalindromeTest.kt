@@ -35,4 +35,14 @@ class PalindromeTest {
 
         assertEquals(expected, result)
     }
+
+    @Test
+    fun check_10_is_not_palindrome() {
+        val x = 10
+        val expected = false
+
+        val result = palindrome.solve(x)
+
+        assertEquals(expected, result)
+    }
 }
