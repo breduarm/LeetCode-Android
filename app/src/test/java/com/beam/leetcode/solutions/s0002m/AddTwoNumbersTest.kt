@@ -9,32 +9,96 @@ class AddTwoNumbersTest {
 
     @Test
     fun case_1() {
-        var l1: ListNode? = ListNode(2)
-        val l1Head = l1
-        l1?.next = ListNode(4)
-        l1 = l1?.next
-        l1?.next = ListNode(3)
-        l1 = l1?.next
+        var l1Node: ListNode? = ListNode(2)
+        val l1Head = l1Node
+        l1Node?.next = ListNode(4)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(3)
 
-        var l2: ListNode? = ListNode(5)
-        val l2Head = l2
-        l2?.next = ListNode(6)
-        l2 = l2?.next
-        l2?.next = ListNode(4)
-        l2 = l2?.next
+        var l2Node: ListNode? = ListNode(5)
+        val l2Head = l2Node
+        l2Node?.next = ListNode(6)
+        l2Node = l2Node?.next
+        l2Node?.next = ListNode(4)
 
-        var expected: ListNode? = ListNode(7)
-        var expectedHead = expected
-        expected?.next = ListNode(0)
-        expected = expected?.next
-        expected?.next = ListNode(8)
+        var expectedNode: ListNode? = ListNode(7)
+        var expected = expectedNode
+        expectedNode?.next = ListNode(0)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(8)
 
         var result = addTwoNumbers.solve(l1Head, l2Head)
 
-        while (expectedHead?.next != null || result?.next != null) {
-            assertEquals(expectedHead?.`val`, result?.`val`)
-            expectedHead = expectedHead?.next
+        while (expected?.next != null || result?.next != null) {
+            assertEquals(expected?.`val`, result?.`val`)
+            expected = expected?.next
             result = result?.next
         }
+
+        assertEquals(expected?.`val`, result?.`val`)
+    }
+
+    @Test
+    fun case_2() {
+        val l1 = ListNode(0)
+        val l2 = ListNode(0)
+
+        val expected = ListNode(0)
+
+        val result = addTwoNumbers.solve(l1, l2)
+
+        assertEquals(expected.`val`, result?.`val`)
+        assertEquals(expected.next, result?.next)
+    }
+
+    @Test
+    fun case_3() {
+        var l1Node: ListNode? = ListNode(9)
+        val l1Head = l1Node
+        l1Node?.next = ListNode(9)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(9)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(9)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(9)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(9)
+        l1Node = l1Node?.next
+        l1Node?.next = ListNode(9)
+
+        var l2Node: ListNode? = ListNode(9)
+        val l2Head = l2Node
+        l2Node?.next = ListNode(9)
+        l2Node = l2Node?.next
+        l2Node?.next = ListNode(9)
+        l2Node = l2Node?.next
+        l2Node?.next = ListNode(9)
+
+        var expectedNode: ListNode? = ListNode(8)
+        var expected = expectedNode
+        expectedNode?.next = ListNode(9)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(9)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(9)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(0)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(0)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(0)
+        expectedNode = expectedNode?.next
+        expectedNode?.next = ListNode(1)
+
+        var result = addTwoNumbers.solve(l1Head, l2Head)
+
+        while (expected?.next != null || result?.next != null) {
+            assertEquals(expected?.`val`, result?.`val`)
+            expected = expected?.next
+            result = result?.next
+        }
+
+        assertEquals(expected?.`val`, result?.`val`)
     }
 }
