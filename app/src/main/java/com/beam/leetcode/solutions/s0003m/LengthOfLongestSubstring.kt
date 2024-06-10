@@ -5,10 +5,8 @@ import kotlin.math.max
 class LengthOfLongestSubstring {
 
     fun solve(s: String): Int {
-        val history = mutableMapOf<Char, Int>().withDefault{ k -> -1 }
-
+        val history = mutableMapOf<Char, Int>().withDefault{ _ -> -1 }
         var result = 0
-
         var leftIndex = 0
         var rightIndex = 0
 
