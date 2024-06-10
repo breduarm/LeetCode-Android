@@ -7,7 +7,7 @@ class RomanToIntTest {
     private val romanToInt = RomanToInt()
 
     @Test
-    fun check_roman_number_III_is_3() {
+    fun case_1() {
         val s = "III"
         val expected = 3
 
@@ -17,7 +17,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_II_is_2() {
+    fun case_2() {
         val s = "II"
         val expected = 2
 
@@ -27,7 +27,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_XII_is_12() {
+    fun case_3() {
         val s = "XII"
         val expected = 12
 
@@ -37,7 +37,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_XXVII_is_27() {
+    fun case_4() {
         val s = "XXVII"
         val expected = 27
 
@@ -47,7 +47,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_IV_is_4() {
+    fun case_5() {
         val s = "IV"
         val expected = 4
 
@@ -57,7 +57,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_IX_is_9() {
+    fun case_6() {
         val s = "IX"
         val expected = 9
 
@@ -67,7 +67,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_MMXXIV_is_2024() {
+    fun case_7() {
         val s = "MMXXIV"
         val expected = 2024
 
@@ -77,7 +77,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_MCMXCIV_is_1994() {
+    fun case_8() {
         val s = "MCMXCIV"
         val expected = 1994
 
@@ -87,7 +87,7 @@ class RomanToIntTest {
     }
 
     @Test
-    fun check_roman_number_D_is_500() {
+    fun case_9() {
         val s = "D"
         val expected = 500
 

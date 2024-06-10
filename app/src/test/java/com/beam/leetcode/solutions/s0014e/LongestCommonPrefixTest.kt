@@ -7,7 +7,7 @@ class LongestCommonPrefixTest {
     private val longestCommonPrefix = LongestCommonPrefix()
 
     @Test
-    fun check_strs_with_only_one_empty_value() {
+    fun case_1() {
         val strs = arrayOf("")
         val expected = ""
 
@@ -17,7 +17,7 @@ class LongestCommonPrefixTest {
     }
 
     @Test
-    fun check_strs_with_first_empty_value() {
+    fun case_2() {
         val strs = arrayOf("", "flower", "flow")
         val expected = ""
 
@@ -27,7 +27,7 @@ class LongestCommonPrefixTest {
     }
 
     @Test
-    fun check_strs_with_first_valid_value_and_the_rest_empty() {
+    fun case_3() {
         val strs = arrayOf("flower", "", "")
         val expected = ""
 
@@ -37,7 +37,7 @@ class LongestCommonPrefixTest {
     }
 
     @Test
-    fun check_strs_with_empty_values() {
+    fun case_4() {
         val strs = arrayOf("", "", "", "")
         val expected = ""
 
@@ -47,7 +47,7 @@ class LongestCommonPrefixTest {
     }
 
     @Test
-    fun check_common_prefix_fl() {
+    fun case_5() {
         val strs = arrayOf("flower","flow","flight")
         val expected = "fl"
 
@@ -57,7 +57,7 @@ class LongestCommonPrefixTest {
     }
 
     @Test
-    fun check_non_common_prefix() {
+    fun case_6() {
         val strs = arrayOf("dog","racecar","car")
         val expected = ""
 

@@ -8,7 +8,7 @@ class TwoSumTest {
     private val twoSum = TwoSum()
 
     @Test
-    fun add_first_two_positions() {
+    fun case_1() {
         val nums = intArrayOf(2,7,11,15)
         val target = 9
 
@@ -17,7 +17,7 @@ class TwoSumTest {
     }
 
     @Test
-    fun add_last_two_positions() {
+    fun case_2() {
         val nums = intArrayOf(3,2,4)
         val target = 6
 
@@ -26,7 +26,7 @@ class TwoSumTest {
     }
 
     @Test
-    fun add_the_two_positions_of_an_array() {
+    fun case_3() {
         val nums = intArrayOf(3,3)
         val target = 6
 
@@ -35,7 +35,7 @@ class TwoSumTest {
     }
 
     @Test
-    fun add_two_first_positions_and_execution_time_measured_is_finite() {
+    fun case_4() {
         val nums = intArrayOf(2,7,11,15)
         val target = 9
 

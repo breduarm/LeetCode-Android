@@ -7,7 +7,7 @@ class PalindromeTest {
     private val palindrome = Palindrome()
 
     @Test
-    fun check_0_is_palindrome() {
+    fun case_1() {
         val x = 0
         val expected = true
 
@@ -17,7 +17,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun check_negative_int_is_not_palindrome() {
+    fun case_2() {
         val x = -121
         val expected = false
 
@@ -27,7 +27,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun check_121_is_palindrome() {
+    fun case_3() {
         val x = 121
         val expected = true
 
@@ -37,7 +37,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun check_10_is_not_palindrome() {
+    fun case_4() {
         val x = 10
         val expected = false
 
