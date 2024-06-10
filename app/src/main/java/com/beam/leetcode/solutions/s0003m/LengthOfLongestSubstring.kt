@@ -1,6 +1,5 @@
 package com.beam.leetcode.solutions.s0003m
 
-import androidx.compose.ui.text.substring
 import kotlin.math.max
 
 class LengthOfLongestSubstring {
