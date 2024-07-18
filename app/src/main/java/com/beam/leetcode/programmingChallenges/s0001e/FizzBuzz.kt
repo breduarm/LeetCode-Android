@@ -5,16 +5,17 @@ class FizzBuzz {
     fun solve(n: Int): String {
         if (n < 1 || n > 100) return ""
 
-        var result = ""
+        val result = StringBuilder()
 
         for (i in 1..n) {
-            result += when {
-                i % 3 == 0 && i % 5 == 0 -> "fizzbuzz\n"
-                i % 3 == 0 -> "fizz\n"
-                i % 5 == 0 -> "buzz\n"
-                else -> "$i\n"
+            val strToAppend = when {
+                i % 3 == 0 && i % 5 == 0 -> "fizzbuzz"
+                i % 3 == 0 -> "fizz"
+                i % 5 == 0 -> "buzz"
+                else -> i
             }
+            result.append("$strToAppend\n")
         }
-        return result
+        return result.toString()
     }
 }
