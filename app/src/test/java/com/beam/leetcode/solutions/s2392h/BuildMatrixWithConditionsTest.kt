@@ -1,6 +1,5 @@
-package com.beam.leetcode.solutions.s2392
+package com.beam.leetcode.solutions.s2392h
 
-import com.beam.leetcode.solutions.s2392h.BuildMatrixWithConditions
 import org.junit.Assert.assertArrayEquals
 import org.junit.Test
 
