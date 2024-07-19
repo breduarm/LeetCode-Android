@@ -49,4 +49,15 @@ class CheckAnagramTest {
 
         assertEquals(expected, result)
     }
+
+    @Test
+    fun case_5() {
+        val firstWord = "Table"
+        val secondWord = "LABET"
+        val expected = true
+
+        val result = checkAnagram.solve(firstWord, secondWord)
+
+        assertEquals(expected, result)
+    }
 }
