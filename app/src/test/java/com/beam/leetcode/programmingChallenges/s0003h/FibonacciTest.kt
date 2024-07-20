@@ -25,4 +25,44 @@ class FibonacciTest {
 
         assertEquals(expected, result)
     }
+
+    @Test
+    fun case_3() {
+        val n = 0
+        val expected = ""
+
+        val result = fibonacci.solve(n)
+
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun case_4() {
+        val n = 1
+        val expected = "0"
+
+        val result = fibonacci.solve(n)
+
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun case_5() {
+        val n = 2
+        val expected = "0, 1"
+
+        val result = fibonacci.solve(n)
+
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun case_6() {
+        val n = 3
+        val expected = "0, 1, 1"
+
+        val result = fibonacci.solve(n)
+
+        assertEquals(expected, result)
+    }
 }
