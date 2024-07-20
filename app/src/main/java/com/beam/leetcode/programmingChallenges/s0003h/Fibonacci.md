@@ -3,7 +3,7 @@ Return the `n` fibonacci numbers starting from `0`
 
 - The Fibonacci numbers are a sequence of numbers whose next result is the sum of the previous two.
 - E.g: `0, 1, 1, 2, 3, 5, 8, 13..`
-- return empty if n is not `0 < n <= Int.MAX`
+- return empty if n is not `0 < n < Int.MAX_VALUE`
 
 ## Example 1:
 
@@ -17,4 +17,4 @@ Return the `n` fibonacci numbers starting from `0`
 
 ## Constrains:
 
-- Only positive numbers are allowed `0 < n <= Int.MAX`
+- Only positive numbers are allowed `0 < n < Int.MAX_VALUE`
