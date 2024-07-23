@@ -12,7 +12,7 @@ class MergeTwoSortedList {
         val head = ListNode(-1)
         var result: ListNode? = head
 
-        while (l1?.`val` != null || l2?.`val` != null) {
+        while (l1 != null || l2 != null) {
             val l1Value = l1?.`val` ?: Int.MAX_VALUE
             val l2Value = l2?.`val` ?: Int.MAX_VALUE
             if (l1Value < l2Value) {
