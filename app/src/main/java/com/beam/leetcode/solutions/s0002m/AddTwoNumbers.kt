@@ -1,10 +1,8 @@
 package com.beam.leetcode.solutions.s0002m
 
-class AddTwoNumbers {
+import com.beam.leetcode.common.ListNode
 
-    class ListNode(var `val`: Int) {
-        var next: ListNode? = null
-    }
+class AddTwoNumbers {
 
     fun solve(l1: ListNode?, l2: ListNode?): ListNode? {
         var list1 = l1

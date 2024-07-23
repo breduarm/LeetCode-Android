@@ -1,6 +1,6 @@
 package com.beam.leetcode.solutions.s0002m
 
-import com.beam.leetcode.solutions.s0002m.AddTwoNumbers.ListNode
+import com.beam.leetcode.common.ListNode
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
