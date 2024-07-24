@@ -16,7 +16,7 @@ class PrimeTest {
         val (resultBoolean, resultPrimes) = prime.solve(n)
 
         assertEquals(expectedBoolean, resultBoolean)
-        assertEquals(expectedPrimes, resultPrimes)
+        assertArrayEquals(expectedPrimes, resultPrimes)
     }
 
     @Test
@@ -40,7 +40,7 @@ class PrimeTest {
         val (resultBoolean, resultPrimes) = prime.solve(n)
 
         assertEquals(expectedBoolean, resultBoolean)
-        assertEquals(expectedPrimes, resultPrimes)
+        assertArrayEquals(expectedPrimes, resultPrimes)
     }
 
     @Test
@@ -52,6 +52,18 @@ class PrimeTest {
         val (resultBoolean, resultPrimes) = prime.solve(n)
 
         assertEquals(expectedBoolean, resultBoolean)
-        assertEquals(expectedPrimes, resultPrimes)
+        assertArrayEquals(expectedPrimes, resultPrimes)
+    }
+
+    @Test
+    fun case_5() {
+        val n = 1
+        val expectedBoolean = false
+        val expectedPrimes = intArrayOf()
+
+        val (resultBoolean, resultPrimes) = prime.solve(n)
+
+        assertEquals(expectedBoolean, resultBoolean)
+        assertArrayEquals(expectedPrimes, resultPrimes)
     }
 }
