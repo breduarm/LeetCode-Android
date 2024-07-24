@@ -1,34 +1,30 @@
 package com.beam.leetcode.programmingChallenges.s0004m
 
+import kotlin.math.sqrt
+
 class Prime {
 
+    // Solution using the sieve of Eratosthenes algorithm
+
     fun solve(n: Int): Pair<Boolean, IntArray> {
-
         if (n < 2 || n >= Int.MAX_VALUE) return false to intArrayOf()
-        val primes = mutableListOf(1)
 
-        for (i in 2..n) {
-            if (isPrime(i)) {
-                primes.add(i)
+        val primeFlags = BooleanArray(n + 1) { true }
+        primeFlags[0] = false
+        primeFlags[1] = false
+
+        for (i in 2..sqrt(n.toDouble()).toInt()) {
+            if (primeFlags[i]) {
+                for (j in (i * i)..n step i) {
+                    primeFlags[j] = false
+                }
             }
         }
 
-        val isNPrime = primes.last() == n
+        val primes: List<Int> = primeFlags.mapIndexed { index, isPrime ->
+            if (isPrime) index else null
+        }.filterNotNull()
 
-        return isNPrime to primes.toIntArray()
-    }
-
-    private fun isPrime(n: Int): Boolean {
-        if (n <= 1) return false
-        if (n <= 3) return true
-        if (n % 2 == 0 || n % 3 == 0) return false
-
-        var i = 5
-        while (i * i <= n) {
-            if (n % i == 0 || n % (i + 2) == 0) return false
-            i += 6
-        }
-
-        return true
+        return primeFlags[n] to primes.toIntArray()
     }
 }

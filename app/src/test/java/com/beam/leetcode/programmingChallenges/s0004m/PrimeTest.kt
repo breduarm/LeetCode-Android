@@ -11,7 +11,7 @@ class PrimeTest {
     fun case_1() {
         val n = 5
         val expectedBoolean = true
-        val expectedPrimes = intArrayOf(1, 2, 3, 5)
+        val expectedPrimes = intArrayOf(2, 3, 5)
 
         val (resultBoolean, resultPrimes) = prime.solve(n)
 
@@ -47,7 +47,7 @@ class PrimeTest {
     fun case_4() {
         val n = 8
         val expectedBoolean = false
-        val expectedPrimes = intArrayOf(1, 2, 3, 5, 7)
+        val expectedPrimes = intArrayOf(2, 3, 5, 7)
 
         val (resultBoolean, resultPrimes) = prime.solve(n)
 
