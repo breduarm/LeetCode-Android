@@ -8,7 +8,7 @@ Check if a number is prime or not, and return the `n` prime numbers in and `Arra
 ## Example 1
 
 **Input:** n = 5
-**Output:** isPrime = true, primes = [1, 2, 3, 5]
+**Output:** isPrime = true, primes = [2, 3, 5]
 
 ## Example 2
 
@@ -23,7 +23,7 @@ Check if a number is prime or not, and return the `n` prime numbers in and `Arra
 ## Example 4
 
 **Input:** n = 8
-**Output:** isPrime = false, primes = [1, 2, 3, 5, 7]
+**Output:** isPrime = false, primes = [2, 3, 5, 7]
 
 ## Constrains
 
