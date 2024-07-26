@@ -18,6 +18,7 @@ class RemoveElementTest {
         assertEquals(expectedK, result)
 
         for (i in 0..<result) {
+            nums.sort(0, result)
             assertEquals(expectedNums[i], nums[i])
         }
     }
@@ -27,13 +28,14 @@ class RemoveElementTest {
         val nums = intArrayOf(0, 1, 2, 2, 3, 0, 4, 2)
         val `val` = 2
         val expectedK = 5
-        val expectedNums = intArrayOf(0, 1, 4, 0, 3)
+        val expectedNums = intArrayOf(0, 0, 1, 3, 4)
 
         val result = removeElement.solve(nums, `val`)
 
         assertEquals(expectedK, result)
 
         for (i in 0..<result) {
+            nums.sort(0, result)
             assertEquals(expectedNums[i], nums[i])
         }
     }
