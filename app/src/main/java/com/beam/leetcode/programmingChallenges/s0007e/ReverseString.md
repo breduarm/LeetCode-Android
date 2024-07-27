@@ -1,12 +1,12 @@
 # Problem Statement
 
-Reverse the order of a t: String without using utilities function of the language
-- E.g. t = "Hola mundo", result = "odnum aloH"
+Reverse the order of a `s: String` without using utilities function of the language
+- E.g. `s = "Hola mundo", result = "odnum aloH"`
 
 # Example 1:
 
-**Input:** t = "Hola mundo"
-**Output:** return = "odnum aloH"
+**Input:** t = "Hello world"
+**Output:** return = "dlrow olleH"
 
 # Example 2:
 
