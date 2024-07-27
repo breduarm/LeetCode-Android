@@ -1,6 +1,6 @@
 package com.beam.leetcode.solutions.s0021e
 
-import com.beam.leetcode.common.ListNode
+import com.beam.leetcode.utils.ListNode
 
 class MergeTwoSortedList {
 
