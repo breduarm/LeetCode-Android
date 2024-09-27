@@ -7,7 +7,7 @@ class SearchInsertPosition {
         var right = nums.size - 1
 
         while (left <= right) {
-            val mid = left + (right - left) / 2
+            val mid = (right + left) / 2
 
             when {
                 nums[mid] == target -> return mid // If the target is found, return its index
